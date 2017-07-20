@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+        <style>
+            html{
+                font-family: "VT323";
+                background: #99E550;
+            }
+
+            .title{
+                font-size: 1.4em;
+            }
+
+            hr{
+                border: 2px dashed black;
+            }
+
+            input {
+                margin-top: -1px;
+                background: white;
+                padding: 2px;
+                border: black dashed 2px;
+                font-family: "VT323";
+                font-size: 20px;
+            }
+
+            input:focus{
+                outline: 0;
+            }
+
+            #card{
+                padding: 10px 10px 10px 10px;
+                color: white;
+                font-size: 30px;
+                text-shadow: 2px 2px 1px black;
+                background: #37946E;
+                box-shadow: 3px 3px 1px black;
+                width: 70%;
+                height: 50%;
+                margin-top: 10%;
+                margin-left: 15%;
+            }
+            .footer{
+                text-align: center;
+                margin-bottom: 0px;
+                position: absolute;
+                width: 99%;
+                bottom: 3em;
+                color: white;
+                text-shadow: 1px 1px 1px black;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="card">
+            <form id="submit">
+                <span class="title">Generador de Credencial DP</span>
+                <hr>
+
+                <label for="name">Nombre de MC:</label>
+                <input id="name" type="text" id="name">
+                <input type="submit" value="Generar">
+                <br>
+                <hr>
+                <img src="https://minotar.net/bust/char/100.png" id="char"> <br>
+                <span id="idname"></span><br>
+                <span><b>Edad:</b> <span id="age"></span></span><br>
+                <span><b>Hobby:</b> <span id="hobby"></span></span><br>
+                <span><b>Ultimo Baneo Por:</b> <span id="ban"></span></span><br><br>
+                <span><b>Valido hasta:</b> <span id="valid"></span></span>
+            </form>
+        </div>
+
+        <div class="footer"><span>Creado con <span style="color:red;"><3</span> por rodel77 (GitHub)<br>(Generación al azar por seed)</span></div>
+
+        <script src="random.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
